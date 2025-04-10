@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Recipe Book</h1>
+
+        <div class="form-section">
+            <h2>Add a Recipe</h2>
+            <form id="recipeForm">
+                <input type="text" id="name" placeholder="Recipe Name" required>
+                <textarea id="ingredients" placeholder="Ingredients" required></textarea>
+                <textarea id="steps" placeholder="Preparation Steps" required></textarea>
+                <input type="file" id="image" accept="image/*" required>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+
+        <div class="search-section">
+            <input type="text" id="search" placeholder="Search recipes...">
+        </div>
+
+        <div class="recipes-section" id="recipesList">
+            <!-- Recipes will be displayed here -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

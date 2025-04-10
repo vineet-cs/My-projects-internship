@@ -1,0 +1,150 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .todo-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .todo-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .todo-container h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .input-group input,
+  .input-group select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  .input-group button {
+    padding: 12px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .input-group button:hover {
+    background: #218838;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    transition: background 0.3s;
+  }
+  
+  li:hover {
+    background: #e7f1ff;
+  }
+  
+  li.completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .priority-high {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .priority-medium {
+    color: #fd7e14;
+    font-weight: bold;
+  }
+  
+  .priority-low {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .actions button {
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .actions button:hover {
+    background: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .input-group input,
+    .input-group select,
+    .input-group button {
+      font-size: 14px;
+    }
+    .actions button {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+    .todo-container h2 {
+      font-size: 24px;
+    }
+  }
+  

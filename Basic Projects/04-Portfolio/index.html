@@ -1,0 +1,99 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rupesh | Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/Rupesh_2106005 (2).pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container home-section">
+      <img src="assets/Profile_image.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1>Rupesh</h1>
+      <p>B.Tech. final-year student at NIT Patna passionate about software engineering and problem-solving with a strong foundation in web development, DSA, and DBMS.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p><strong>Education:</strong></p>
+      <ul>
+        <li>B.Tech. - Computer Science & Engineering, NIT Patna, CGPA: 7.80 (2021–2025)</li>
+        <li>12th - Lord Shiva Sr. Sec. School, Hisar, HBSE, 91.40% (2020)</li>
+        <li>10th - Lord Shiva Sr. Sec. School, Hisar, HBSE, 93.20% (2018)</li>
+      </ul>
+      <p><strong>Experience:</strong></p>
+      <ul>
+        <li><strong>IIT Delhi Internship</strong> (May–Jul 2024): EEG Analysis for Alzheimer’s prediction using Brainstorm, sLORETA, MATLAB</li>
+      </ul>
+      <p><strong>Hobbies:</strong> Singing, Dancing, Travelling</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-gallery">
+        <div class="project">
+          <h3>Driver Drowsiness Detection System</h3>
+          <p>Deep learning-based system that alerts the driver if signs of drowsiness are detected. Helps reduce road accidents.</p>
+        </div>
+        <div class="project">
+          <h3>DeepFake Image Detection System</h3>
+          <p>System to detect manipulated images or videos using DeepFake technology.</p>
+          <p><strong>Tools & technologies used:</strong> Python, TensorFlow, Kaggle DFDC Dataset</p>
+          <p>Gathered data from DeepFake datasets, preprocessed it, and built a model to predict whether the image or video is real or fake.</p>
+        </div>
+        <div class="project">
+          <h3>Cafe Menu</h3>
+          <p>Designed a menu page for a café webpage.</p>
+          <p><strong>Tools & technologies used:</strong> HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills and Interests</h2>
+      <p><strong>Languages:</strong> C++, Java, Python, HTML, CSS, JavaScript</p>
+      <p><strong>Frameworks and Technologies:</strong> React.js</p>
+      <p><strong>Cloud/Databases:</strong> MySQL, Appwrite</p>
+      <p><strong>Soft Skills:</strong> Communication Skills, Problem Solving, Teamwork and Collaboration, Time Management, Leadership</p>
+      <p><strong>Coursework:</strong> DBMS, Computer Networks, Operating System, OOPs Concepts, Data Structure and Algorithms, Web Development, Artificial Intelligence</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
