@@ -1,0 +1,68 @@
+/* Dark Theme */
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #0d0d0d;
+    padding: 0 5%;
+}
+
+/* Left Text Content */
+.text-container {
+    width: 40%;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.text-container .title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: orange;
+    letter-spacing: 1px;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* Right Image */
+.image-container {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    left: 0%;
+    
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;  /* Low opacity */
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.3s;
+}
+
+/* Hover Effect */
+.image-container img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

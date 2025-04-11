@@ -1,0 +1,41 @@
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #121212; /* Dark background */
+}
+
+/* Feature Card Styling */
+.feature-card {
+  background: linear-gradient(135deg, #222, #333);
+  color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(255, 165, 0, 0.3); /* Orange shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Hover Effects */
+
+
+/* Heading Style */
+.feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ffa500; /* Orange text */
+  font-weight: bold;
+}
+
+/* Paragraph Style */
+.feature-card p {
+  font-size: 1rem;
+  color: #ddd;
+  font-family: 'Montserrat', sans-serif; /* Different font family */
+  line-height: 1.4;
+}

@@ -1,0 +1,54 @@
+.workouts-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increased space between items */
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #121212; /* Dark theme */
+}
+
+.workout-card {
+  background:transparent;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 120px; /* Slightly larger cards */
+  transition: transform 0.3s ease-in-out;
+ /* Glow effect */
+  position: relative;
+}
+
+.workout-card::before {
+  content: "";
+  position: absolute;
+  inset: 5px; /* Inner border spacing */
+  border-radius: 12px;
+ /* Inner white border */
+}
+
+.workout-card img {
+  width: 100%;
+  height: 120px;
+  border-radius: 50%; /* Circular images */
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border: 3px solid orange; /* Outer orange border */
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); 
+}
+
+.workout-card h3 {
+  color: #f8b400; /* Orange text */
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.workout-card:hover {
+  transform: scale(1.1);
+  border-color: white; /* Change border to white on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Stronger glow */
+}
+
+.workout-card img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}

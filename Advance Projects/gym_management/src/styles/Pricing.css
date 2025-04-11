@@ -1,0 +1,25 @@
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #121212;
+  }
+  
+  .pricing-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pricing-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .buy-btn {
+    background: gold;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

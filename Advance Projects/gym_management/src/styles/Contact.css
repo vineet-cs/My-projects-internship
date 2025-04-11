@@ -1,0 +1,77 @@
+.contact-container {
+    background-color: #121212;
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffa500;
+}
+
+/* Contact Information Section */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+}
+
+/* Left Column */
+.club-info, .operation-hours, .wellness-links {
+    flex: 1;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffa500;
+    text-transform: uppercase;
+}
+
+/* Links */
+.wellness-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wellness-links ul li {
+    margin-bottom: 8px;
+}
+
+.wellness-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.wellness-links ul li a:hover {
+    color: #ffa500;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
