@@ -1,5 +1,5 @@
 Unified Mentor Projects - Full Stack Internship
-Hi! I'm Rupesh Saini, and this repository contains the work I did as a Full Stack Web Development Intern at Unified Mentor.
+Hi! I'm Vineet Raj, and this repository contains the work I did as a Full Stack Web Development Intern at Unified Mentor.
 
 👨‍💻 About Me
 🎓 B.Tech CSE Student passionate about web development, software engineering & real-world problem-solving.
